@@ -1,12 +1,14 @@
 # 20213227OPENHW
 
+#!/bin/bash
 cd ~
-mkdir -p mydir/subdir1
-touch mydir/subdir1/file1.txt
+touch original.txt
+echo -e "Hello Linux\nThis is a test\nHave a good day" > original.txt
+cp original.txt backup.txt
 
-mkdir -p mydir/subdir2
-touch mydir/subdir2/file2.txt
+mv original.txt data.txt
 
-tree
+tail -n 2 data.txt
 
-tar -cvf mydir.tar mydir
+## hw
+wc -w data.txt
