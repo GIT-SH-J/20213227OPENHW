@@ -1,14 +1,13 @@
 # 20213227OPENHW
 
 #!/bin/bash
-
 cd ~
-echo 'echo "Sensitive information"' > private.sh
-chmod 700 private.sh
-ls -l private.sh
+mkdir -p logs/app.log 
+mkdir -p logs/erro.log
+mkdir -p logs/old_logs
+touch logs/old_logs/app_old.log
 
-## hw
-ls -l private.sh >> change_log.txt
-echo "" >> change_log.txt
+find ~/logs -type f -name "*.log"
+
 
 
