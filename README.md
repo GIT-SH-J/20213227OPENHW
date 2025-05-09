@@ -8,3 +8,5 @@ mkdir -p mydir/subdir2
 touch mydir/subdir2/file2.txt
 
 tree
+
+tar -cvf mydir.tar mydir

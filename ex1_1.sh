@@ -9,3 +9,5 @@ touch mydir/subdir2/file2.txt
 tree
 
 ## hW
+
+tar -cvf mydir.tar mydir
