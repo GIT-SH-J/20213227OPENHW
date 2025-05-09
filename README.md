@@ -1,14 +1,10 @@
 # 20213227OPENHW
 
 #!/bin/bash
+
+
 cd ~
-touch original.txt
-echo -e "Hello Linux\nThis is a test\nHave a good day" > original.txt
-cp original.txt backup.txt
+echo 'echo "Sensitive information"' > private.sh
+chmod 700 private.sh
+ls -l private.sh
 
-mv original.txt data.txt
-
-tail -n 2 data.txt
-
-## hw
-wc -w data.txt
